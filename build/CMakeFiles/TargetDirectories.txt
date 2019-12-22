@@ -1,0 +1,5 @@
+/home/allen/findballoon/build/CMakeFiles/edit_cache.dir
+/home/allen/findballoon/build/CMakeFiles/rebuild_cache.dir
+/home/allen/findballoon/build/src/CMakeFiles/edit_cache.dir
+/home/allen/findballoon/build/src/CMakeFiles/rebuild_cache.dir
+/home/allen/findballoon/build/src/CMakeFiles/hello.dir
