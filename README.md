@@ -15,7 +15,7 @@ The project aims at to locate the white balloon accurately and know whether the 
 
 - 根据linemod反馈的气球信息,随机取100个像素点,若为白色,则反馈为气球
 
-  ![2019-12-22 17-52-34屏幕截图](/home/allen/图片/2019-12-22 17-52-34屏幕截图.png)
+  ![2019-12-22 17-52-34屏幕截图](https://github.com/DorothysDad/findballoon/tree/master/doc/1.png)
 
 ## Prepare
 
@@ -35,7 +35,7 @@ cd ..&& ./bin/hello
 ```
 
 <video id="video" controls="" preload="none">
-    <source id="mp4" src="/home/allen/视频/1.mp4" type="video/mp4">
+    <source id="mp4" src="https://github.com/DorothysDad/findballoon/tree/master/doc/1.mp4" type="video/mp4">
 </video>
 
 
