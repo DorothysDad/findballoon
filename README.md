@@ -35,6 +35,6 @@ make -j
 cd ..&& ./bin/hello
 ```
   ![2019-12-22 17-52-34屏幕截图](https://github.com/DorothysDad/findballoon/blob/master/doc/x.gif)
-0
+
 # Thanks for another contributor shisanchuan sincerely 
 
