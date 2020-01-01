@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/allen/findballoon
+CMAKE_SOURCE_DIR = /home/allen/findballon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/allen/findballoon/build
+CMAKE_BINARY_DIR = /home/allen/findballon/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/hello.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/hello.dir/flags.make
 
 src/CMakeFiles/hello.dir/findballon.cpp.o: src/CMakeFiles/hello.dir/flags.make
 src/CMakeFiles/hello.dir/findballon.cpp.o: ../src/findballon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballoon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/hello.dir/findballon.cpp.o"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/findballon.cpp.o -c /home/allen/findballoon/src/findballon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/hello.dir/findballon.cpp.o"
+	cd /home/allen/findballon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/findballon.cpp.o -c /home/allen/findballon/src/findballon.cpp
 
 src/CMakeFiles/hello.dir/findballon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/findballon.cpp.i"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballoon/src/findballon.cpp > CMakeFiles/hello.dir/findballon.cpp.i
+	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon/src/findballon.cpp > CMakeFiles/hello.dir/findballon.cpp.i
 
 src/CMakeFiles/hello.dir/findballon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/findballon.cpp.s"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballoon/src/findballon.cpp -o CMakeFiles/hello.dir/findballon.cpp.s
+	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon/src/findballon.cpp -o CMakeFiles/hello.dir/findballon.cpp.s
 
 src/CMakeFiles/hello.dir/findballon.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/hello.dir/findballon.cpp.o.provides.build: src/CMakeFiles/hello.d
 
 src/CMakeFiles/hello.dir/main.cpp.o: src/CMakeFiles/hello.dir/flags.make
 src/CMakeFiles/hello.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballoon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/hello.dir/main.cpp.o"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/main.cpp.o -c /home/allen/findballoon/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/hello.dir/main.cpp.o"
+	cd /home/allen/findballon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/main.cpp.o -c /home/allen/findballon/src/main.cpp
 
 src/CMakeFiles/hello.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/main.cpp.i"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballoon/src/main.cpp > CMakeFiles/hello.dir/main.cpp.i
+	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon/src/main.cpp > CMakeFiles/hello.dir/main.cpp.i
 
 src/CMakeFiles/hello.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/main.cpp.s"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballoon/src/main.cpp -o CMakeFiles/hello.dir/main.cpp.s
+	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon/src/main.cpp -o CMakeFiles/hello.dir/main.cpp.s
 
 src/CMakeFiles/hello.dir/main.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/CMakeFiles/hello.dir/main.cpp.o.provides.build: src/CMakeFiles/hello.dir/mai
 
 src/CMakeFiles/hello.dir/line2Dup.cpp.o: src/CMakeFiles/hello.dir/flags.make
 src/CMakeFiles/hello.dir/line2Dup.cpp.o: ../src/line2Dup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballoon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/hello.dir/line2Dup.cpp.o"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/line2Dup.cpp.o -c /home/allen/findballoon/src/line2Dup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/hello.dir/line2Dup.cpp.o"
+	cd /home/allen/findballon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/line2Dup.cpp.o -c /home/allen/findballon/src/line2Dup.cpp
 
 src/CMakeFiles/hello.dir/line2Dup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/line2Dup.cpp.i"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballoon/src/line2Dup.cpp > CMakeFiles/hello.dir/line2Dup.cpp.i
+	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon/src/line2Dup.cpp > CMakeFiles/hello.dir/line2Dup.cpp.i
 
 src/CMakeFiles/hello.dir/line2Dup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/line2Dup.cpp.s"
-	cd /home/allen/findballoon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballoon/src/line2Dup.cpp -o CMakeFiles/hello.dir/line2Dup.cpp.s
+	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon/src/line2Dup.cpp -o CMakeFiles/hello.dir/line2Dup.cpp.s
 
 src/CMakeFiles/hello.dir/line2Dup.cpp.o.requires:
 
@@ -188,8 +188,8 @@ hello_EXTERNAL_OBJECTS =
 ../bin/hello: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 ../bin/hello: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 ../bin/hello: src/CMakeFiles/hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/allen/findballoon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../bin/hello"
-	cd /home/allen/findballoon/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../bin/hello"
+	cd /home/allen/findballon/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/hello.dir/build: ../bin/hello
@@ -203,10 +203,10 @@ src/CMakeFiles/hello.dir/requires: src/CMakeFiles/hello.dir/line2Dup.cpp.o.requi
 .PHONY : src/CMakeFiles/hello.dir/requires
 
 src/CMakeFiles/hello.dir/clean:
-	cd /home/allen/findballoon/build/src && $(CMAKE_COMMAND) -P CMakeFiles/hello.dir/cmake_clean.cmake
+	cd /home/allen/findballon/build/src && $(CMAKE_COMMAND) -P CMakeFiles/hello.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/hello.dir/clean
 
 src/CMakeFiles/hello.dir/depend:
-	cd /home/allen/findballoon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/allen/findballoon /home/allen/findballoon/src /home/allen/findballoon/build /home/allen/findballoon/build/src /home/allen/findballoon/build/src/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/allen/findballon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/allen/findballon /home/allen/findballon/src /home/allen/findballon/build /home/allen/findballon/build/src /home/allen/findballon/build/src/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/hello.dir/depend
 

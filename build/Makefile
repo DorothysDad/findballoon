@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/allen/findballoon
+CMAKE_SOURCE_DIR = /home/allen/findballon
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/allen/findballoon/build
+CMAKE_BINARY_DIR = /home/allen/findballon/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballoon/build/CMakeFiles /home/allen/findballoon/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballon/build/CMakeFiles /home/allen/findballon/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballoon/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballon/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named findballoon_test
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+findballoon_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 findballoon_test
+.PHONY : findballoon_test
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) -f src/CMakeFiles/hello.dir/build.make src/CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+findballoon_test/fast:
+	$(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/build
+.PHONY : findballoon_test/fast
 
 # Help Target
 help:
@@ -131,7 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello"
+	@echo "... findballoon_test"
 .PHONY : help
 
 

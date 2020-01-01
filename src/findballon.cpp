@@ -34,15 +34,15 @@ cv::Point2f Findballon::getPoint(cv::Mat &img,cv::Mat &src){
                 P1.y = contours_Rect.center.y;
             }
 		} 
-        cout<<"中心坐标："<<P1<<endl;
+        // cout<<"中心坐标："<<P1<<endl;
     }
     else {
-       cout<<"No contours"<<endl;
+    //    cout<<"No contours"<<endl;
        P1.x=320.0;
        P1.y=240.0;
     }
 
-   cout<<"图像大小："<<src.size<<endl;
+//    cout<<"图像大小："<<src.size<<endl;
    imshow("1",src);
   
    return P1;
@@ -64,7 +64,7 @@ cv::Scalar Findballon::GetColor(cv::Mat imgROI,int size){
 	for(int i=0;i<size;i++){
 		int m=rand()%r-(r/2);
 		for(int i=0;i<3;i++)
-			color.val[i]+=imgROI.at<cv::Vec3b>(imgROI.cols/2+m,imgROI.rows+m)[i];
+			color.val[i]+=imgROI.at<cv::Vec3b>(imgROI.cols/2+m,imgROI.rows/2+m)[i];
 	}
 	for(int i=0;i<3;i++)
 		color.val[i]/=size;
@@ -97,7 +97,7 @@ bool Findballon::scale_test(cv::Mat &img){
         int x =  templ[0].width/2 + match.x;
         int y = templ[0].height/2 + match.y;
         int r = templ[0].width/2;
-        cout<<"x is "<<x<<"y is "<<y<<"R is "<<r<<endl;
+        // cout<<"x is "<<x<<"y is "<<y<<"R is "<<r<<endl;
         
         Scalar color(255, rand()%255, rand()%255);
 

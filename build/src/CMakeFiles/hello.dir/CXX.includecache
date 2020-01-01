@@ -178,21 +178,21 @@ map
 mipp.h
 ../include/mipp.h
 
-/home/allen/findballoon/src/findballon.cpp
+/home/allen/findballon/src/findballon.cpp
 findballon.h
-/home/allen/findballoon/src/findballon.h
+/home/allen/findballon/src/findballon.h
 line2Dup.h
-/home/allen/findballoon/src/line2Dup.h
+/home/allen/findballon/src/line2Dup.h
 
-/home/allen/findballoon/src/line2Dup.cpp
+/home/allen/findballon/src/line2Dup.cpp
 line2Dup.h
-/home/allen/findballoon/src/line2Dup.h
+/home/allen/findballon/src/line2Dup.h
 iostream
 -
 chrono
 -
 
-/home/allen/findballoon/src/main.cpp
+/home/allen/findballon/src/main.cpp
 opencv2/opencv.hpp
 -
 opencv2/highgui/highgui.hpp

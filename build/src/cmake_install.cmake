@@ -1,4 +1,4 @@
-# Install script for directory: /home/allen/findballoon/src
+# Install script for directory: /home/allen/findballon/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

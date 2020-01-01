@@ -1,7 +1,9 @@
 find_package(OpenCV  REQUIRED)
+project(findballoon)
+#aux_source_directory(. DIR_SRCS)
+#add_executable(hello ${DIR_SRCS})
 
-aux_source_directory(. DIR_SRCS)
-add_executable(hello ${DIR_SRCS})
+#target_link_libraries(hello  ${OpenCV_LIBS}  pthread)
 
-target_link_libraries(hello  ${OpenCV_LIBS}  pthread)
-
+add_executable(${PROJECT_NAME}_test line2Dup.cpp test.cpp)
+target_link_libraries(${PROJECT_NAME}_test ${OpenCV_LIBS})

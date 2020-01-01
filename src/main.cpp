@@ -13,7 +13,7 @@ using namespace std;
     Mat src,dst2,dst;
     Findballon find;
     VideoCapture cap; 
-	cap.open("4.mp4");
+	cap.open("/home/allen/findballon/test.avi");
       if (!cap.isOpened())   
     {  
        cout << "Cannot open the camera" << endl;  
@@ -30,7 +30,7 @@ using namespace std;
     dst2 = src.clone();
     find.getPoint(dst,src);
     cv::Point2f P=find.getPoint(dst,src);
-    cout<<P.x<<endl;
+   //  cout<<P.x<<endl;
     bool haveballon =  find.scale_test(dst2);
     cout<<"+++++++++"<<haveballon<<endl;
     waitKey(1);
