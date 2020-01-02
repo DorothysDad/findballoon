@@ -76,6 +76,7 @@ bool Findballon::scale_test(cv::Mat &img){
     static  std::vector<std::string> ids;
     static line2Dup::Detector detector(num_feature, {4, 8});
     if(!flag){
+        ids.push_back("circle1");
         ids.push_back("circle");
         detector.readClasses(ids, "%s_templ.yaml");
         flag = true;
@@ -92,11 +93,20 @@ bool Findballon::scale_test(cv::Mat &img){
     if(top5>matches.size()) top5=matches.size();
     for(size_t i=0; i<top5; i++){
         auto match = matches[i];
-        auto templ = detector.getTemplates("circle",
+        auto templ1 = detector.getTemplates("circle",
                                             match.template_id);
-        int x =  templ[0].width/2 + match.x;
-        int y = templ[0].height/2 + match.y;
-        int r = templ[0].width/2;
+        auto templ2 = detector.getTemplates("circle1",
+                                            match.template_id);
+        int x = -1,y = -1,r = -1;
+        if(templ2.size()){
+            x =  templ1[0].width/2 + match.x;
+            y = templ1[0].height/2 + match.y;
+            r = templ1[0].width/2;     
+        }else if(templ1.size()){
+            x =  templ2[0].width/2 + match.x;
+            y = templ2[0].height/2 + match.y;
+            r = templ2[0].width/2; 
+        }
         // cout<<"x is "<<x<<"y is "<<y<<"R is "<<r<<endl;
         
         Scalar color(255, rand()%255, rand()%255);

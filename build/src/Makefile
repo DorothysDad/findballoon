@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/allen/findballon
+CMAKE_SOURCE_DIR = /home/allen/findballon_plus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/allen/findballon/build
+CMAKE_BINARY_DIR = /home/allen/findballon_plus/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/allen/findballon/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballon/build/CMakeFiles /home/allen/findballon/build/src/CMakeFiles/progress.marks
-	cd /home/allen/findballon/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballon/build/CMakeFiles 0
+	cd /home/allen/findballon_plus/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballon_plus/build/CMakeFiles /home/allen/findballon_plus/build/src/CMakeFiles/progress.marks
+	cd /home/allen/findballon_plus/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/allen/findballon_plus/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/allen/findballon/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/allen/findballon_plus/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/allen/findballon/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/allen/findballon_plus/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/allen/findballon/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/allen/findballon_plus/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/allen/findballon/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/allen/findballon_plus/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/findballoon_test.dir/rule:
-	cd /home/allen/findballon/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/findballoon_test.dir/rule
+	cd /home/allen/findballon_plus/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/findballoon_test.dir/rule
 .PHONY : src/CMakeFiles/findballoon_test.dir/rule
 
 # Convenience name for target.
@@ -122,8 +122,35 @@ findballoon_test: src/CMakeFiles/findballoon_test.dir/rule
 
 # fast build rule for target.
 findballoon_test/fast:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/build
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/build
 .PHONY : findballoon_test/fast
+
+findballon.o: findballon.cpp.o
+
+.PHONY : findballon.o
+
+# target to build an object file
+findballon.cpp.o:
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/findballon.cpp.o
+.PHONY : findballon.cpp.o
+
+findballon.i: findballon.cpp.i
+
+.PHONY : findballon.i
+
+# target to preprocess a source file
+findballon.cpp.i:
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/findballon.cpp.i
+.PHONY : findballon.cpp.i
+
+findballon.s: findballon.cpp.s
+
+.PHONY : findballon.s
+
+# target to generate assembly for a file
+findballon.cpp.s:
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/findballon.cpp.s
+.PHONY : findballon.cpp.s
 
 line2Dup.o: line2Dup.cpp.o
 
@@ -131,7 +158,7 @@ line2Dup.o: line2Dup.cpp.o
 
 # target to build an object file
 line2Dup.cpp.o:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o
 .PHONY : line2Dup.cpp.o
 
 line2Dup.i: line2Dup.cpp.i
@@ -140,7 +167,7 @@ line2Dup.i: line2Dup.cpp.i
 
 # target to preprocess a source file
 line2Dup.cpp.i:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.i
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.i
 .PHONY : line2Dup.cpp.i
 
 line2Dup.s: line2Dup.cpp.s
@@ -149,35 +176,35 @@ line2Dup.s: line2Dup.cpp.s
 
 # target to generate assembly for a file
 line2Dup.cpp.s:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.s
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.s
 .PHONY : line2Dup.cpp.s
 
-test.o: test.cpp.o
+main.o: main.cpp.o
 
-.PHONY : test.o
+.PHONY : main.o
 
 # target to build an object file
-test.cpp.o:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/test.cpp.o
-.PHONY : test.cpp.o
+main.cpp.o:
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-test.i: test.cpp.i
+main.i: main.cpp.i
 
-.PHONY : test.i
+.PHONY : main.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/test.cpp.i
-.PHONY : test.cpp.i
+main.cpp.i:
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-test.s: test.cpp.s
+main.s: main.cpp.s
 
-.PHONY : test.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /home/allen/findballon/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/test.cpp.s
-.PHONY : test.cpp.s
+main.cpp.s:
+	cd /home/allen/findballon_plus/build && $(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -188,12 +215,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... findballoon_test"
+	@echo "... findballon.o"
+	@echo "... findballon.i"
+	@echo "... findballon.s"
 	@echo "... line2Dup.o"
 	@echo "... line2Dup.i"
 	@echo "... line2Dup.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -205,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/allen/findballon/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/allen/findballon_plus/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

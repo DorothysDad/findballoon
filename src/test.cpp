@@ -6,7 +6,7 @@
 using namespace std;
 using namespace cv;
 
-static std::string prefix = "/home/allen/findballon/test/";
+static std::string prefix = "/home/shisanchuan/C++work/findballon/test/";
 
 // NMS, got from cv::dnn so we don't need opencv contrib
 // just collapse it
@@ -179,7 +179,7 @@ void scale_test(string mode = "test"){
         detector.readClasses(ids, prefix+"case3/%s_templ.yaml");
         
         VideoCapture cap;
-        cap.open(prefix+"case3/2019-12-12-11-10-11.mp4");
+        cap.open(prefix+"case3/chuopo.avi");
         while(1){
             Mat test_img;
             cap>>test_img;
@@ -196,7 +196,7 @@ void scale_test(string mode = "test"){
 
         Timer timer;
         // match, img, min socre, ids
-        auto matches = detector.match(img, 75, ids);
+        auto matches = detector.match(img, 88, ids);
         // one output match:
         // x: top left x
         // y: top left y
@@ -205,63 +205,39 @@ void scale_test(string mode = "test"){
         timer.out();
 
         std::cout << "matches.size(): " << matches.size() << std::endl;
-        size_t top5 = 5;
+        size_t top5 = 1;
         if(top5>matches.size()) top5=matches.size();
         for(size_t i=0; i<top5; i++){
             auto match = matches[i];
-            // {
-            // auto templ = detector.getTemplates("balloon1",
-            //                                    match.template_id);
-            // // template:
-            // // nums: num_pyramids * num_modality (modality, depth or RGB, always 1 here)
-            // // template[0]: lowest pyrimad(more pixels)
-            // // template[0].width: actual width of the matched template
-            // // template[0].tl_x / tl_y: topleft corner when cropping templ during training
-            // // In this case, we can regard width/2 = radius
-            // int x =  templ[0].width/2 + match.x;
-            // int y = templ[0].height/2 + match.y;
-            // int r = templ[0].width/2;
-            // Scalar color(255, rand()%255, rand()%255);
-
-            // cv::putText(img, to_string(int(round(match.similarity))),
-            //             Point(match.x+r-10, match.y-3), FONT_HERSHEY_PLAIN, 2, color);
-            // cv::circle(img, {x, y}, r, color, 2);
-            // }
-            // {
-            // auto templ = detector.getTemplates("balloon2",
-            //                                    match.template_id);
-            // // template:
-            // // nums: num_pyramids * num_modality (modality, depth or RGB, always 1 here)
-            // // template[0]: lowest pyrimad(more pixels)
-            // // template[0].width: actual width of the matched template
-            // // template[0].tl_x / tl_y: topleft corner when cropping templ during training
-            // // In this case, we can regard width/2 = radius
-            // int x =  templ[0].width/2 + match.x;
-            // int y = templ[0].height/2 + match.y;
-            // int r = templ[0].width/2;
-            // Scalar color(255, rand()%255, rand()%255);
-
-            // cv::putText(img, to_string(int(round(match.similarity))),
-            //             Point(match.x+r-10, match.y-3), FONT_HERSHEY_PLAIN, 2, color);
-            // cv::circle(img, {x, y}, r, color, 2);
-            // }
-            {
-            auto templ = detector.getTemplates("balloon3",
+            auto templ1 = detector.getTemplates("balloon1",
                                                match.template_id);
-            // template:
-            // nums: num_pyramids * num_modality (modality, depth or RGB, always 1 here)
-            // template[0]: lowest pyrimad(more pixels)
-            // template[0].width: actual width of the matched template
-            // template[0].tl_x / tl_y: topleft corner when cropping templ during training
-            // In this case, we can regard width/2 = radius
-            int x =  templ[0].width/2 + match.x;
-            int y = templ[0].height/2 + match.y;
-            int r = templ[0].width/2;
-            Scalar color(255, rand()%255, rand()%255);
+            auto templ2 = detector.getTemplates("balloon2",
+                                               match.template_id);
+            auto templ3 = detector.getTemplates("balloon3",
+                                               match.template_id);
+            int x = -1,y=-1,r=-1;
+            // if(templ1.size()&&templ1.size()<5){
+            //     x = templ1[0].width/2 + match.x;
+            //     y = templ1[0].height/2 + match.y;
+            //     r = templ1[0].width/2;
+            // }
+             if(templ2.size()&&templ2.size()<5){
+                x = templ2[0].width/2 + match.x;
+                y = templ2[0].height/2 + match.y;
+                r = templ2[0].width/2;
+            }
+            else if(templ3.size()&&templ3.size()<5){
+                x = templ3[0].width/2 + match.x;
+                y = templ3[0].height/2 + match.y;
+                r = templ3[0].width/2;
+            }
+            
+            if(r>0){
+                Scalar color(255, rand()%255, rand()%255);
 
-            cv::putText(img, to_string(int(round(match.similarity))),
-                        Point(match.x+r-10, match.y-3), FONT_HERSHEY_PLAIN, 2, color);
-            cv::circle(img, {x, y}, r, color, 2);
+                cv::putText(img, to_string(int(round(match.similarity))),
+                            Point(match.x+r-10, match.y-3), FONT_HERSHEY_PLAIN, 2, color);
+                cv::circle(img, {x, y}, r, color, 2);
             }
         }
 
@@ -440,7 +416,7 @@ void view_angle(){
 int main(){
 
     MIPP_test();
-    scale_test("train");
+    scale_test("test");
     // noise_test("test"); // test or train
     return 0;
 }

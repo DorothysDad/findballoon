@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/allen/findballon
+CMAKE_SOURCE_DIR = /home/allen/findballon_plus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/allen/findballon/build
+CMAKE_BINARY_DIR = /home/allen/findballon_plus/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/findballoon_test.dir/depend.make
@@ -57,18 +57,42 @@ include src/CMakeFiles/findballoon_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/findballoon_test.dir/flags.make
 
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.o: src/CMakeFiles/findballoon_test.dir/flags.make
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.o: ../src/findballon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon_plus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/findballoon_test.dir/findballon.cpp.o"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findballoon_test.dir/findballon.cpp.o -c /home/allen/findballon_plus/src/findballon.cpp
+
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/findballoon_test.dir/findballon.cpp.i"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon_plus/src/findballon.cpp > CMakeFiles/findballoon_test.dir/findballon.cpp.i
+
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/findballoon_test.dir/findballon.cpp.s"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon_plus/src/findballon.cpp -o CMakeFiles/findballoon_test.dir/findballon.cpp.s
+
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.requires
+
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.provides: src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.provides.build
+.PHONY : src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.provides
+
+src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.provides.build: src/CMakeFiles/findballoon_test.dir/findballon.cpp.o
+
+
 src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o: src/CMakeFiles/findballoon_test.dir/flags.make
 src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o: ../src/line2Dup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o"
-	cd /home/allen/findballon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findballoon_test.dir/line2Dup.cpp.o -c /home/allen/findballon/src/line2Dup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon_plus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findballoon_test.dir/line2Dup.cpp.o -c /home/allen/findballon_plus/src/line2Dup.cpp
 
 src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/findballoon_test.dir/line2Dup.cpp.i"
-	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon/src/line2Dup.cpp > CMakeFiles/findballoon_test.dir/line2Dup.cpp.i
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon_plus/src/line2Dup.cpp > CMakeFiles/findballoon_test.dir/line2Dup.cpp.i
 
 src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/findballoon_test.dir/line2Dup.cpp.s"
-	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon/src/line2Dup.cpp -o CMakeFiles/findballoon_test.dir/line2Dup.cpp.s
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon_plus/src/line2Dup.cpp -o CMakeFiles/findballoon_test.dir/line2Dup.cpp.s
 
 src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o.requires:
 
@@ -81,40 +105,42 @@ src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o.provides: src/CMakeFiles/find
 src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o.provides.build: src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o
 
 
-src/CMakeFiles/findballoon_test.dir/test.cpp.o: src/CMakeFiles/findballoon_test.dir/flags.make
-src/CMakeFiles/findballoon_test.dir/test.cpp.o: ../src/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/findballoon_test.dir/test.cpp.o"
-	cd /home/allen/findballon/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findballoon_test.dir/test.cpp.o -c /home/allen/findballon/src/test.cpp
+src/CMakeFiles/findballoon_test.dir/main.cpp.o: src/CMakeFiles/findballoon_test.dir/flags.make
+src/CMakeFiles/findballoon_test.dir/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/allen/findballon_plus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/findballoon_test.dir/main.cpp.o"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/findballoon_test.dir/main.cpp.o -c /home/allen/findballon_plus/src/main.cpp
 
-src/CMakeFiles/findballoon_test.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/findballoon_test.dir/test.cpp.i"
-	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon/src/test.cpp > CMakeFiles/findballoon_test.dir/test.cpp.i
+src/CMakeFiles/findballoon_test.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/findballoon_test.dir/main.cpp.i"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/allen/findballon_plus/src/main.cpp > CMakeFiles/findballoon_test.dir/main.cpp.i
 
-src/CMakeFiles/findballoon_test.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/findballoon_test.dir/test.cpp.s"
-	cd /home/allen/findballon/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon/src/test.cpp -o CMakeFiles/findballoon_test.dir/test.cpp.s
+src/CMakeFiles/findballoon_test.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/findballoon_test.dir/main.cpp.s"
+	cd /home/allen/findballon_plus/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/allen/findballon_plus/src/main.cpp -o CMakeFiles/findballoon_test.dir/main.cpp.s
 
-src/CMakeFiles/findballoon_test.dir/test.cpp.o.requires:
+src/CMakeFiles/findballoon_test.dir/main.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/findballoon_test.dir/test.cpp.o.requires
+.PHONY : src/CMakeFiles/findballoon_test.dir/main.cpp.o.requires
 
-src/CMakeFiles/findballoon_test.dir/test.cpp.o.provides: src/CMakeFiles/findballoon_test.dir/test.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/test.cpp.o.provides.build
-.PHONY : src/CMakeFiles/findballoon_test.dir/test.cpp.o.provides
+src/CMakeFiles/findballoon_test.dir/main.cpp.o.provides: src/CMakeFiles/findballoon_test.dir/main.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/findballoon_test.dir/build.make src/CMakeFiles/findballoon_test.dir/main.cpp.o.provides.build
+.PHONY : src/CMakeFiles/findballoon_test.dir/main.cpp.o.provides
 
-src/CMakeFiles/findballoon_test.dir/test.cpp.o.provides.build: src/CMakeFiles/findballoon_test.dir/test.cpp.o
+src/CMakeFiles/findballoon_test.dir/main.cpp.o.provides.build: src/CMakeFiles/findballoon_test.dir/main.cpp.o
 
 
 # Object files for target findballoon_test
 findballoon_test_OBJECTS = \
+"CMakeFiles/findballoon_test.dir/findballon.cpp.o" \
 "CMakeFiles/findballoon_test.dir/line2Dup.cpp.o" \
-"CMakeFiles/findballoon_test.dir/test.cpp.o"
+"CMakeFiles/findballoon_test.dir/main.cpp.o"
 
 # External object files for target findballoon_test
 findballoon_test_EXTERNAL_OBJECTS =
 
+../bin/findballoon_test: src/CMakeFiles/findballoon_test.dir/findballon.cpp.o
 ../bin/findballoon_test: src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o
-../bin/findballoon_test: src/CMakeFiles/findballoon_test.dir/test.cpp.o
+../bin/findballoon_test: src/CMakeFiles/findballoon_test.dir/main.cpp.o
 ../bin/findballoon_test: src/CMakeFiles/findballoon_test.dir/build.make
 ../bin/findballoon_test: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
 ../bin/findballoon_test: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
@@ -162,24 +188,25 @@ findballoon_test_EXTERNAL_OBJECTS =
 ../bin/findballoon_test: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 ../bin/findballoon_test: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 ../bin/findballoon_test: src/CMakeFiles/findballoon_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/allen/findballon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/findballoon_test"
-	cd /home/allen/findballon/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/findballoon_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/allen/findballon_plus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../bin/findballoon_test"
+	cd /home/allen/findballon_plus/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/findballoon_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/findballoon_test.dir/build: ../bin/findballoon_test
 
 .PHONY : src/CMakeFiles/findballoon_test.dir/build
 
+src/CMakeFiles/findballoon_test.dir/requires: src/CMakeFiles/findballoon_test.dir/findballon.cpp.o.requires
 src/CMakeFiles/findballoon_test.dir/requires: src/CMakeFiles/findballoon_test.dir/line2Dup.cpp.o.requires
-src/CMakeFiles/findballoon_test.dir/requires: src/CMakeFiles/findballoon_test.dir/test.cpp.o.requires
+src/CMakeFiles/findballoon_test.dir/requires: src/CMakeFiles/findballoon_test.dir/main.cpp.o.requires
 
 .PHONY : src/CMakeFiles/findballoon_test.dir/requires
 
 src/CMakeFiles/findballoon_test.dir/clean:
-	cd /home/allen/findballon/build/src && $(CMAKE_COMMAND) -P CMakeFiles/findballoon_test.dir/cmake_clean.cmake
+	cd /home/allen/findballon_plus/build/src && $(CMAKE_COMMAND) -P CMakeFiles/findballoon_test.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/findballoon_test.dir/clean
 
 src/CMakeFiles/findballoon_test.dir/depend:
-	cd /home/allen/findballon/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/allen/findballon /home/allen/findballon/src /home/allen/findballon/build /home/allen/findballon/build/src /home/allen/findballon/build/src/CMakeFiles/findballoon_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/allen/findballon_plus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/allen/findballon_plus /home/allen/findballon_plus/src /home/allen/findballon_plus/build /home/allen/findballon_plus/build/src /home/allen/findballon_plus/build/src/CMakeFiles/findballoon_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/findballoon_test.dir/depend
 

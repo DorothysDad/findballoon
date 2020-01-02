@@ -5,5 +5,5 @@ project(findballoon)
 
 #target_link_libraries(hello  ${OpenCV_LIBS}  pthread)
 
-add_executable(${PROJECT_NAME}_test line2Dup.cpp test.cpp)
+add_executable(${PROJECT_NAME}_test findballon.cpp  line2Dup.cpp main.cpp)
 target_link_libraries(${PROJECT_NAME}_test ${OpenCV_LIBS})

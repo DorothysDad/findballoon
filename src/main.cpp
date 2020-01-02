@@ -1,10 +1,10 @@
 #include <opencv2/opencv.hpp>
-#include<opencv2/highgui/highgui.hpp>
-#include<opencv2/core/core.hpp>
-#include<opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <iostream>
-#include<findballon.h>
-
+#include "findballon.h"
+#include "line2Dup.h"
 using namespace cv;
 using namespace std;
 
@@ -13,7 +13,7 @@ using namespace std;
     Mat src,dst2,dst;
     Findballon find;
     VideoCapture cap; 
-	cap.open("/home/allen/findballon/test.avi");
+	cap.open("/home/allen/findballon/chuopo.avi");
       if (!cap.isOpened())   
     {  
        cout << "Cannot open the camera" << endl;  
