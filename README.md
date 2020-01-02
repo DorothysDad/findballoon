@@ -24,7 +24,10 @@ The project aims at to locate the white balloon accurately and know whether the 
 - Software environment：Ubuntu16.04、 opencv3 or higher version, MIPP library
 
 ## How to used
-
+## Test
+- 训练文件为test.cpp,需更改相应路径训练得yaml配置文件
+- 以test/case3为例训练了不同大小的气球
+- 若训练完,则需修改CmakeLists文件并加载配置文件
 ### build
 
 ```
@@ -34,6 +37,10 @@ cmake ..
 make -j
 cd ..&& ./bin/hello
 ```
+## Improevd
+- ~~增加了多角度多大小的配置文件,提高了linemod的稳定性,确保气球能被识别
+- 重叠问题
+
   ![2019-12-22 17-52-34屏幕截图](https://github.com/DorothysDad/findballoon/blob/master/doc/x.gif)
 
 # Contributor 
