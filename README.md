@@ -38,7 +38,7 @@ make -j
 cd ..&& ./bin/hello
 ```
 ## Improevd
-- ~~增加了多角度多大小的配置文件,提高了linemod的稳定性,确保气球能被识别
+- ~~增加了多角度多大小的配置文件,提高了linemod的稳定性,确保气球能被识别~~
 - 重叠问题
 
   ![2019-12-22 17-52-34屏幕截图](https://github.com/DorothysDad/findballoon/blob/master/doc/x.gif)
